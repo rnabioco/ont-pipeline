@@ -18,6 +18,8 @@ ref="$HOME/ref/genomes/sacCer1/sacCer1.fa"
 
 export H5PY_DEFAULT_READONLY=1
 
+gunzip $fastq_data/*.fastq.gz
+
 multi_to_single_fast5 --input_path $fast5_data \
   --save_path $singles \
   --threads 16
