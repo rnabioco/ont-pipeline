@@ -31,4 +31,4 @@ def get_all_quals(file1, file2):
             base_qual_holder = base_qual_holder.rstrip(",") # remove the final comma from the string of quality values
             align_qual_holder = align_qual_holder.rstrip(",") # remove the final comma from the string of quality values
             
-            out_pileup.write('\t'.join(pileup_data[0:4]) + "\t" + base_qual_holder + align_qual_holder "\n") # print all the previous elements and the new value
+            out_pileup.write("\t".join(pileup_data[0:4]) + "\t" + base_qual_holder + "\t" + align_qual_holder + "\n") # print all the previous elements and the new value
